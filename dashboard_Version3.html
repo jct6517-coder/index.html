@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - KnowStore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+
+<!-- NAVBAR -->
+<nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-black text-blue-600">🏪 KnowStore</a>
+        <div class="flex gap-3">
+            <a href="marketplace.html" class="px-4 py-2 text-gray-700 hover:text-blue-600 font-semibold">Marketplace</a>
+            <a href="index.html" class="px-6 py-2 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700">Logout</a>
+        </div>
+    </div>
+</nav>
+
+<!-- DASHBOARD HEADER -->
+<section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4">
+        <h1 class="text-4xl font-black mb-2">Welcome Back! 👋</h1>
+        <p class="text-white/80">Manage your courses, track earnings, and grow your business</p>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="max-w-7xl mx-auto px-4 py-12">
+    <div class="grid md:grid-cols-4 gap-6 mb-12">
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+            <div class="flex justify-between items-start">
+                <div>
+                    <p class="text-gray-600 text-sm font-semibold">Total Earnings</p>
+                    <p class="text-3xl font-black text-gray-900 mt-2">$12,450</p>
+                </div>
+                <div class="text-4xl text-green-600">💰</div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+            <div class="flex justify-between items-start">
+                <div>
+                    <p class="text-gray-600 text-sm font-semibold">Total Sales</p>
+                    <p class="text-3xl font-black text-gray-900 mt-2">245</p>
+                </div>
+                <div class="text-4xl text-blue-600">📊</div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+            <div class="flex justify-between items-start">
+                <div>
+                    <p class="text-gray-600 text-sm font-semibold">Active Products</p>
+                    <p class="text-3xl font-black text-gray-900 mt-2">12</p>
+                </div>
+                <div class="text-4xl text-purple-600">📦</div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+            <div class="flex justify-between items-start">
+                <div>
+                    <p class="text-gray-600 text-sm font-semibold">Students</p>
+                    <p class="text-3xl font-black text-gray-900 mt-2">1,240</p>
+                </div>
+                <div class="text-4xl text-pink-600">👥</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- YOUR PRODUCTS -->
+    <h2 class="text-2xl font-black mb-6">Your Products</h2>
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <table class="w-full">
+            <thead class="bg-gray-100 border-b">
+                <tr>
+                    <th class="px-6 py-4 text-left font-bold">Product</th>
+                    <th class="px-6 py-4 text-left font-bold">Price</th>
+                    <th class="px-6 py-4 text-left font-bold">Sales</th>
+                    <th class="px-6 py-4 text-left font-bold">Earnings</th>
+                    <th class="px-6 py-4 text-left font-bold">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="px-6 py-4">
+                        <div>
+                            <p class="font-bold">Python Mastery</p>
+                            <p class="text-sm text-gray-600">Programming Course</p>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 font-bold">$49</td>
+                    <td class="px-6 py-4 font-bold">89</td>
+                    <td class="px-6 py-4 font-bold text-green-600">$3,971</td>
+                    <td class="px-6 py-4">
+                        <button class="px-4 py-2 bg-blue-600 text-white rounded font-bold text-sm hover:bg-blue-700">Edit</button>
+                    </td>
+                </tr>
+                <tr class="border-b hover:bg-gray-50">
+                    <td class="px-6 py-4">
+                        <div>
+                            <p class="font-bold">Web Design Course</p>
+                            <p class="text-sm text-gray-600">Design Course</p>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 font-bold">$79</td>
+                    <td class="px-6 py-4 font-bold">156</td>
+                    <td class="px-6 py-4 font-bold text-green-600">$11,076</td>
+                    <td class="px-6 py-4">
+                        <button class="px-4 py-2 bg-blue-600 text-white rounded font-bold text-sm hover:bg-blue-700">Edit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ADD NEW PRODUCT -->
+    <div class="mt-12">
+        <button onclick="alert('Upload Product Form - Coming Soon!')" class="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-lg hover:shadow-lg">
+            + Create New Product
+        </button>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white py-12 mt-12">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <p>&copy; 2026 KnowStore. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
